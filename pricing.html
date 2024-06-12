@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="pricingpagestyles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our Pricing Plans</h1>
+            <p>Select the best plan for your needs</p>
+            <div class="toggle-container">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly</span>
+            </div>
+            <div class="preferences">
+                <label for="currencySelect">Currency:</label>
+                <select id="currencySelect">
+                    <option value="$">USD ($)</option>
+                    <option value="€">EUR (€)</option>
+                    <option value="£">GBP (£)</option>
+                    <option value="₹">INR (₹)</option>
+                </select>
+                <label for="storageUnit">Storage Unit:</label>
+                <input type="text" id="storageUnit" placeholder="e.g., GB" value="GB">
+            </div>
+        </header>
+        <section class="pricing">
+            <div class="card">
+                <h2>Basic</h2>
+                <p class="price"><span class="currencySymbol">$</span><span class="monthly-price">10</span><span class="yearly-price">100</span>/mo</p>
+                <ul>
+                    <li><span class="storageAmount">10</span><span class="storageUnit">GB</span> Storage</li>
+                    <li>100 Emails</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="card">
+                <h2>Standard</h2>
+                <p class="price"><span class="currencySymbol">$</span><span class="monthly-price">20</span><span class="yearly-price">200</span>/mo</p>
+                <ul>
+                    <li><span class="storageAmount">50</span><span class="storageUnit">GB</span> Storage</li>
+                    <li>500 Emails</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="card">
+                <h2>Premium</h2>
+                <p class="price"><span class="currencySymbol">$</span><span class="monthly-price">30</span><span class="yearly-price">300</span>/mo</p>
+                <ul>
+                    <li><span class="storageAmount">100</span><span class="storageUnit">GB</span> Storage</li>
+                    <li>Unlimited Emails</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button>Select</button>
+            </div>
+        </section>
+    </div>
+    <script src="pricingscript.js"></script>
+</body>
+</html>
